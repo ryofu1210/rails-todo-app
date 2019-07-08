@@ -11,6 +11,7 @@ default: &default
   username: root
   password:
   # timeout: 5000
+  socket: /tmp/mysql.sock
 
 development:
   <<: *default
