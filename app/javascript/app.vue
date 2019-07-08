@@ -1,15 +1,23 @@
 <template>
-  <div id="app">
-    <p>{{ message }}</p>
+  <div>
+    <!-- <p>{{ message }}</p> -->
+    <header-component />
+    <router-view />
+    <!-- <footer-component /> -->
   </div>
 </template>
 
 <script>
+import HeaderComponent from './components/header';
+
 export default {
-  data: function () {
-    return {
-      message: "Hello Vue!"
-    }
+  // data: function () {
+  //   return {
+  //     message: "Hello Vue!"
+  //   }
+  // }
+  components: {
+    HeaderComponent
   }
 }
 </script>
