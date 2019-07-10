@@ -27,6 +27,7 @@ export default {
     KbnButton,
     KbnIcon,
     KbnTaskDetailForm
+    
   },
 
   computed: {

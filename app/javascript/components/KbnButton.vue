@@ -1,6 +1,6 @@
 <template>
   <button 
-  type="button" @click="handleClose" :class="classes" :disabled="disabled" 
+    type="button" @click="handleClose" :class="classes" :disabled="disabled" 
   >
     <slot />
   </button>
