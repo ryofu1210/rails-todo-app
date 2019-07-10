@@ -1,11 +1,23 @@
 import VueRouter from 'vue-router';
 import AppPage from './app.vue';
-import SamplePage from './components/sample.vue';
+import KbnBoardView from './components/KbnBoardView.vue';
+import KbnTaskDetailModal from './components/KbnTaskDetailModal.vue'
 
 const routes = [
 {
   path: '/', 
-  component: SamplePage
+  component: KbnBoardView,
+  children: [
+    {
+      path: 'tasks/:id',
+      component: KbnTaskDetailModal,
+      name: 'KbnTaskDetailModal'
+    }
+  ]
+},
+{
+  path: '*',
+  redirect: '/'
 }
 ]
 
